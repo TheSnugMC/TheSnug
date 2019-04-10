@@ -1,0 +1,33 @@
+@import "../theme-admin";
+
+.Queue {
+
+  &__bulk-functions {
+    display: flex;
+
+    padding: .5rem;
+
+    border-bottom: 1px solid rgba($fg-color, 0.4);
+  }
+
+  &__selection {
+    flex-grow: 1;
+
+    &-count {
+      margin-left: .25rem;
+    }
+  }
+
+  &__day-header {
+    color: mix($fg-color, gray, 40%);
+    font-size: 150%;
+    margin: 1rem;
+    margin-left: -1rem;
+  }
+
+  &__message {
+    font-style: italic;
+    text-align: center;
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../theme";
+
+.NotFound {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &__info {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    &__home {
+        font-size: 1.25rem;
+
+        a {
+            text-decoration: none;
+            color: darken($fg-color, 30%);
+
+            &:hover { color: $fg-color; }
+        }
+    }
+}

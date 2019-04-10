@@ -1,0 +1,46 @@
+
+$shadow-lighter: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow-light: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$shadow-medium: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$shadow-heavy: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$shadow-heavier: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+$primary-color: #2d1a42 !default;
+$secondary-color: #401a42 !default;
+$accent-color: #1a1b42 !default;
+
+$fg-color: #FFF !default;
+
+$z-box: 10000;
+$z-modal: 100000;
+
+$z-schedule: 100;
+$z-watching: 1;
+
+$background-fade: linear-gradient(to right, $primary-color, $secondary-color);
+$background-fade-dark: linear-gradient(
+  to right, darken($primary-color, 10%),
+  darken($secondary-color, 10%)
+);
+
+$sm-size: 480px;
+$md-size: 960px;
+$lg-size: 1200px;
+
+@mixin sm {
+  @media (max-width: #{$sm-size}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$md-size}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: #{$lg-size}) {
+    @content;
+  }
+}

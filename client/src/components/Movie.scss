@@ -1,0 +1,58 @@
+@import "../theme";
+
+.Movie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 6rem;
+
+  padding: .5rem;
+
+  border-bottom: 1px solid #FFF6;
+  &:last-child { border-bottom: none; }
+
+  @include md {
+    height: 4rem;
+  }
+
+  &--empty {
+    display: block;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: italic;
+  }
+
+  &__hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 5rem;
+
+    @include md {
+      height: 3rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: bold;
+
+    @include md {
+      font-size: 1.25rem;
+      padding: .25rem;
+    }
+  }
+}
+
+.StyledHour {
+  font-weight: bold;
+
+  &__hour { font-size: 150%; }
+  &__minute { font-size: 100%; vertical-align: top; }
+
+  @include md {
+    font-size: .75rem;
+  }
+}

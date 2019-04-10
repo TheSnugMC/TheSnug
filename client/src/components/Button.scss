@@ -1,0 +1,46 @@
+@import "../theme";
+
+$danger-color: #F00;
+$warning-color: #FC2;
+$success-color: #6F6;
+$normal-color: #FFF;
+
+@mixin button-type($name, $color) {
+  &--#{$name} {
+    border-color: $color;
+    color: $color;
+    
+    &:hover {
+      background-color: $color;
+      color: $secondary-color;
+    }
+
+    &:disabled {
+      border-color: darken(desaturate($color, 70%), 33%);
+
+      &:hover {
+        background-color: darken(desaturate($color, 70%), 33%);
+      }
+    }
+  }
+}
+
+.Button {
+  display: inline-block;
+
+  padding: .5rem 1rem;
+  margin: 0 .5rem;
+
+  border: 2px solid;
+  border-radius: .5rem;
+
+  background-color: transparent;
+
+  transition: all .125s ease;
+  transition-property: color, background-color;
+
+  @include button-type(normal, $normal-color);
+  @include button-type(danger, $danger-color);
+  @include button-type(warning, $warning-color);
+  @include button-type(success, $success-color);
+}

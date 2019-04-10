@@ -1,0 +1,22 @@
+@import "../theme-admin";
+
+.MovieEditor {
+  &__movie-info, &__url, &__date {
+    display: flex;
+  }
+
+  &__helpers {
+    margin: .5rem 0 1rem;
+    text-align: center;
+  }
+
+  > .Button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .TextInput {
+    flex-grow: 1;
+    margin: 1rem .5rem;
+  }
+}

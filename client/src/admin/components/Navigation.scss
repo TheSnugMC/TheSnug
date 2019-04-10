@@ -1,0 +1,58 @@
+@import "../theme-admin";
+
+.Navigation {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  height: 100%;
+
+  box-shadow: $shadow-heavier;
+  background-color: #0002;
+
+  &__header {
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__link {
+    display: inline-block;
+    position: relative;
+
+    padding: .25rem 1rem;
+    margin: .25rem 0;
+
+    width: 80%;
+
+    color: $fg-color;
+    background-color: transparent;
+
+    text-decoration: none;
+    text-align: center;
+    border-radius: .25rem;
+
+    transition: all .125s ease;
+    transition-property: background-color, color;
+
+    &:hover, &--highlighted {
+      color: $secondary-color;
+      background-color: white;
+    }
+
+    &--highlighted {
+      cursor: default;
+    }
+
+    &:last-child {
+      position: absolute;
+      bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "../theme-admin";
+
+.EditableMovie {
+  display: flex;
+  align-items: center;
+  
+  > .Movie {
+    flex-grow: 1;
+    margin: 0 2rem;
+    border-bottom: none;
+  }
+
+  border-bottom: 1px solid;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &--loading {
+    opacity: 0.25;
+  }
+}

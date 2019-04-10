@@ -1,0 +1,148 @@
+
+@import "../../theme";
+
+$chat-buttons-height: 2rem;
+$chat-compose-height: 3rem;
+
+.Chat {
+  position: relative;
+  height: 100%;
+
+  background-color: darken($secondary-color, 7.5%);
+
+  display: grid;
+  grid-template-rows: $chat-buttons-height auto $chat-compose-height;
+
+  &__buttons {
+    box-shadow: $shadow-light;
+  }
+
+  &__messages {
+    box-shadow: inset 3px 0 6px rgba(0,0,0,.16), inset 3px 0 6px rgba(0,0,0,.23);
+    overflow-y: auto;
+    padding-bottom: 1rem;
+  }
+
+  &__compose {
+    box-shadow: 0 -3px 6px rgba(0,0,0,.16), 0 -3px 6px rgba(0,0,0,.23);
+
+    display: grid;
+    grid-template-columns: auto $chat-compose-height;
+
+    &__input {
+      color: $fg-color;
+      background-color: darken($accent-color, 10%);
+      border: none;
+
+      padding: 0 2rem;
+    }
+  }
+
+  @include sm {
+    max-height: 100%;
+  }
+}
+
+.ChatRoster {
+  position: relative;
+
+  &__button {
+    display: inline-block;
+    height: $chat-buttons-height;
+    padding: 0 .5rem;
+    line-height: $chat-buttons-height;
+    cursor: pointer;
+  }
+
+  &__dropdown {
+    position: absolute;
+    display: none;
+
+    width: 100%;
+    padding: 1rem .5rem;
+    
+    background-color: $accent-color;
+    box-shadow: $shadow-medium;
+
+    &--enabled { display: block; }
+  }
+
+  &__users {
+    list-style-type: none;
+    background-color: darken($accent-color, 5%);
+
+    > li {
+      padding: .25rem;
+      cursor: pointer;
+      user-select: none;
+
+      &:hover { background-color: lighten($accent-color, 5%); }
+    }
+  }
+}
+
+.ChatPopups {
+  position: absolute;
+  top: $chat-buttons-height;
+  width: 100%;
+
+  &__child {
+    position: relative;
+    display: block;
+
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+
+    box-shadow: $shadow-medium;
+
+    cursor: pointer;
+    user-select: none;
+
+    &--info {
+      background-color: steelblue;
+      &:hover { background-color: lighten(steelblue, 5%); }
+    }
+
+    &--error {
+      background-color: indianred;
+      &:hover { background-color: lighten(indianred, 5%); }
+    }
+
+    &__message {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    }
+  }
+
+}
+
+.ChatMessage {
+  display: block;
+  padding: .5rem 1rem 0;
+
+  &__info {
+    color: darken(white, 40%);
+    font-weight: bold;
+
+    > .ChatMessage__body {
+      display: block;
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+
+  &__date {
+    &:before { content: "["; }
+    &:after  { content: "] "; }
+  }
+
+  &__username {
+    &:after { content: ": "; }
+  }
+
+  &__body {
+    word-wrap: break-word;
+  }
+}

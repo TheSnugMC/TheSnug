@@ -1,0 +1,56 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0",
+    "hls.js": "^0.12.2",
+    "immutability-helper": "^2.9.0",
+    "lodash": "^4.17.11",
+    "marked": "^0.6.0",
+    "moment": "^2.23.0",
+    "node-sass": "^4.0.0",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2",
+    "react-redux": "^6.0.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.2",
+    "react-starter-kit": "^0.2.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.1.0",
+    "socket.io-client": "^2.2.0",
+    "typeface-sarabun": "^0.0.71"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "rules": {
+      "semi": [
+        2,
+        "never"
+      ],
+      "quotes": [
+        2,
+        "double"
+      ]
+    }
+  },
+  "proxy": "http://localhost:3001",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

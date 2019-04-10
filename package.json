@@ -1,0 +1,40 @@
+{
+  "name": "thesnug",
+  "version": "1.0.0",
+  "description": "The comfiest streaming service.",
+  "main": "app.js",
+  "author": "fam",
+  "license": "GPL-3.0",
+  "private": false,
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "btoa": "^1.2.1",
+    "concurrently": "^4.1.0",
+    "connect-ensure-login": "^0.1.1",
+    "connect-session-sequelize": "^6.0.0",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "helmet": "^3.15.0",
+    "imdb-api": "^4.0.2",
+    "moment": "^2.23.0",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.11.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.7.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.42.0",
+    "socket.io": "^2.2.0"
+  },
+  "scripts": {
+    "start": "node ./app.js",
+    "devserver": "DEBUG=${DEBUG:-thesnug:*} nodemon --watch src/ --watch ./app.js ./app.js",
+    "devclient": "cd client && yarn start",
+    "dev": "concurrently \"yarn devserver\" \"yarn devclient\""
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
