@@ -1,37 +1,18 @@
-## Welcome to GitHub Pages
+## TheSnug
 
-You can use the [editor on GitHub](https://github.com/TheSnugMC/TheSnug/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Welcome! As of April 10th 2019, TheSnug Team has released it's software for free! The code is now in public domain and anyone can contribute on this github page, fork the code, start your own site, you name it.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Whenever you commit to this repository, others will be able to view what you have added and ultimately make the software better.
 
-### Markdown
+### Do I need to credit this page?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+You may, but it's not needed. Feel free to transform the software in any way you'd like.
 
-```markdown
-Syntax highlighted code block
+For more details see [Github](https://github.com/TheSnugMC/TheSnug).
 
-# Header 1
-## Header 2
-### Header 3
+### Special Thanks
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TheSnugMC/TheSnug/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Special thanks to m712 and Emily for making the base of this project possible.
 
 ### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+TheSnug comes with no warranty and no official form of support yet.
